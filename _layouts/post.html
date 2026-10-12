@@ -7,4 +7,4 @@ layout: default
   <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: t.date_format }}</time></p>
   {{ content }}
 </article>
-<p class="back"><a href="{{ t.blog_url | relative_url }}">← {{ t.back_to_blog }}</a></p>
+<p class="back"><a href="{{ t.posts_url | relative_url }}">← {{ t.all_posts }}</a></p>

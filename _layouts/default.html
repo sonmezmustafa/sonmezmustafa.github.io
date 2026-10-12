@@ -29,8 +29,9 @@
   <header class="site-header">
     <a class="site-name" href="{{ t.home_url | relative_url }}">{{ site.title }}</a>
     <nav>
-      <a href="{{ t.home_url | relative_url }}">{{ t.home }}</a>
-      <a href="{{ t.blog_url | relative_url }}">{{ t.blog }}</a>
+      {%- for item in t.nav %}
+      <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {%- endfor %}
       <a class="lang" href="{{ alt_url | relative_url }}" lang="{{ alt_lang }}" hreflang="{{ alt_lang }}">{{ t.switch_label }}</a>
     </nav>
   </header>

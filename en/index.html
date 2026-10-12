@@ -17,5 +17,5 @@ description: Personal site and blog of Mustafa Sönmez.
 <section>
   <h2>{{ t.posts_title }}</h2>
   {% include post-list.html limit=3 %}
-  <p><a href="{{ t.blog_url | relative_url }}">{{ t.all_posts }} →</a></p>
+  <p><a href="{{ t.posts_url | relative_url }}">{{ t.all_posts }} →</a></p>
 </section>

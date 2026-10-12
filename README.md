@@ -6,7 +6,7 @@ Kişisel site ve blog. GitHub Pages üzerinde Jekyll ile derlenir; yerelde kurul
 
 Türkçe yazı `_posts/tr/`, İngilizce yazı `_posts/en/` klasörüne girer. Dosya adı
 `YYYY-AA-GG-adres-parcasi.md` biçimindedir; adres parçası yazının adresi olur
-(`/blog/adres-parcasi/` ve `/en/blog/adres-parcasi/`).
+(`/yazilar/adres-parcasi/` ve `/en/posts/adres-parcasi/`).
 
 ```markdown
 ---
@@ -24,5 +24,6 @@ olursa dil bağlantısı çeviriye gider, yoksa öbür dilin ana sayfasına gide
 ## Sayfalar
 
 - `index.html` — Türkçe ana sayfa, `en/index.html` — İngilizce ana sayfa
+- `projeler/`, `muhendislik/`, `yazilar/` — menü sayfaları; İngilizceleri `en/projects/`, `en/engineering/`, `en/posts/`
 - `_data/i18n.yml` — menü ve arayüz metinleri
 - `assets/css/style.css` — görünüm

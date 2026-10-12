@@ -20,14 +20,14 @@ defaults:
     values:
       layout: post
       lang: tr
-      permalink: /blog/:title/
+      permalink: /yazilar/:title/
   - scope:
       path: "_posts/en"
       type: posts
     values:
       layout: post
       lang: en
-      permalink: /en/blog/:title/
+      permalink: /en/posts/:title/
 
 exclude:
   - README.md
