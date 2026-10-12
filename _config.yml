@@ -33,6 +33,11 @@ defaults:
       lang: en
       permalink: /en/posts/:title/
 
+# Alt bilgideki iletişim bağlantıları
+contact_links:
+  - title: GitHub
+    url: https://github.com/sonmezmustafa
+
 plugins:
   - jekyll-sitemap
 

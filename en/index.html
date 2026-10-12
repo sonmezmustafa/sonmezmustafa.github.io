@@ -1,21 +1,50 @@
 ---
 ref: home
-description: Personal site and blog of Mustafa Sönmez.
+description: Personal site of Mustafa Sönmez; projects, engineering notes and posts.
 ---
 {%- assign t = site.data.i18n[page.lang] -%}
-<section class="intro">
-  <h1>Hi, I'm Mustafa Sönmez.</h1>
-  <p>[DRAFT — one or two sentences: what you do, where you live.]</p>
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Hi, I'm</p>
+    <h1>Mustafa Sönmez</h1>
+    <p class="lead">[DRAFT — one or two sentences about you.]</p>
+    <p class="actions">
+      <a class="btn" href="{{ '/en/projects/' | relative_url }}">See projects</a>
+      <a href="#iletisim">Contact</a>
+    </p>
+  </div>
+  <div class="photo">MS</div>
 </section>
 
-<section>
+<section class="split">
   <h2>About</h2>
-  <p>[DRAFT — your background, what you are working on now, your interests.]</p>
-  <p><a href="https://github.com/sonmezmustafa">GitHub</a></p>
+  <div class="prose">
+    <p>[DRAFT — your background, what you are working on now, your interests.]</p>
+  </div>
 </section>
 
-<section>
+<section class="areas">
+  <a class="area" href="{{ '/en/projects/' | relative_url }}">
+    <h3>Projects</h3>
+    <p>Work I have finished and work in progress.</p>
+    <span class="go">See projects →</span>
+  </a>
+  <a class="area" href="{{ '/en/engineering/' | relative_url }}">
+    <h3>Engineering</h3>
+    <p>Technical notes, methods and the tools I use.</p>
+    <span class="go">Go to section →</span>
+  </a>
+  <a class="area" href="{{ '/en/posts/' | relative_url }}">
+    <h3>Posts</h3>
+    <p>Writing on what I have learned and what I think about.</p>
+    <span class="go">Read posts →</span>
+  </a>
+</section>
+
+<section class="split">
   <h2>{{ t.posts_title }}</h2>
-  {% include post-list.html limit=3 %}
-  <p><a href="{{ t.posts_url | relative_url }}">{{ t.all_posts }} →</a></p>
+  <div>
+    {% include post-list.html limit=3 %}
+    <p class="more"><a href="{{ t.posts_url | relative_url }}">{{ t.all_posts }} →</a></p>
+  </div>
 </section>

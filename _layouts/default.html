@@ -54,11 +54,15 @@
   }
   </script>
   {%- endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header class="site-header">
-    <a class="site-name" href="{{ t.home_url | relative_url }}">{{ site.title }}</a>
+<div class="site">
+  <header class="top">
+    <a class="name" href="{{ t.home_url | relative_url }}">{{ site.title }}</a>
     <nav>
       {%- for item in t.nav %}
       <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
@@ -67,12 +71,18 @@
     </nav>
   </header>
 
-  <main>
+  <main{% unless page.ref == "home" %} class="page"{% endunless %}>
     {{ content }}
   </main>
 
-  <footer class="site-footer">
-    © {{ site.time | date: "%Y" }} {{ site.title }}
+  <footer class="site-footer" id="iletisim">
+    <span>© {{ site.time | date: "%Y" }} {{ site.title }}</span>
+    <span class="links">
+      {%- for link in site.contact_links %}
+      <a href="{{ link.url }}">{{ link.title }}</a>
+      {%- endfor %}
+    </span>
   </footer>
+</div>
 </body>
 </html>

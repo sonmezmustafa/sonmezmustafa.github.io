@@ -3,7 +3,7 @@
 {%- if posts.size == 0 -%}
 <p>{{ t.no_posts }}</p>
 {%- else -%}
-<ul class="post-list">
+<ul class="posts">
   {%- for post in posts limit: include.limit %}
   <li>
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: t.date_format }}</time>
