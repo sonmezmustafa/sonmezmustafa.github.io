@@ -8,6 +8,7 @@ person_image: /assets/img/mustafa-sonmez.jpg
 
 # Kişi şemasındaki "sameAs": aynı kişiye ait diğer profiller
 same_as:
+  - https://www.linkedin.com/in/cemustafasonmez/
   - https://github.com/sonmezmustafa
 
 defaults:
@@ -37,6 +38,8 @@ defaults:
 
 # Alt bilgideki iletişim bağlantıları
 contact_links:
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/cemustafasonmez/
   - title: GitHub
     url: https://github.com/sonmezmustafa
 
