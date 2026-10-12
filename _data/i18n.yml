@@ -8,6 +8,7 @@ tr:
       url: /muhendislik/
     - title: Yazılar
       url: /yazilar/
+  email_label: E-posta
   switch_label: English
   switch_home: /en/
   posts_title: Son yazılar
@@ -24,6 +25,7 @@ en:
       url: /en/engineering/
     - title: Posts
       url: /en/posts/
+  email_label: Email
   switch_label: Türkçe
   switch_home: /
   posts_title: Latest posts

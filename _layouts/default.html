@@ -110,6 +110,7 @@
   <footer class="site-footer" id="iletisim">
     <span>© {{ site.time | date: "%Y" }} {{ site.title }}</span>
     <span class="links">
+      <a href="mailto:{{ site.email }}">{{ t.email_label }}</a>
       {%- for link in site.contact_links %}
       <a href="{{ link.url }}">{{ link.title }}</a>
       {%- endfor %}

@@ -4,6 +4,7 @@ baseurl: ""
 markdown: kramdown
 timezone: Europe/Istanbul
 
+email: cemustafasonmez@gmail.com
 person_image: /assets/img/mustafa-sonmez.jpg
 
 # Kişi şemasındaki "sameAs": aynı kişiye ait diğer profiller
