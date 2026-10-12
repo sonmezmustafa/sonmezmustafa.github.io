@@ -90,7 +90,7 @@ img { max-width: 100%; height: auto; }
   gap: 1rem 3rem;
   padding-bottom: 4rem;
 }
-.split h2, .page h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.015em; }
+.split > h2, .page h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.015em; }
 .prose { display: grid; gap: 1rem; }
 
 .areas {
@@ -112,7 +112,7 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
 }
 .area:hover { border-color: var(--accent); }
-.area h3 { font-size: 1.25rem; }
+.area h2 { font-size: 1.25rem; }
 .area p { color: var(--muted); font-size: 1rem; line-height: 1.55; }
 .area .go { color: var(--link); font-weight: 700; font-size: 0.95rem; }
 
