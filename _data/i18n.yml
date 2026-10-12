@@ -8,6 +8,7 @@ tr:
       url: /muhendislik/
     - title: Yazılar
       url: /yazilar/
+  job_title: Kurucu Ortak
   email_label: E-posta
   switch_label: English
   switch_home: /en/
@@ -25,6 +26,7 @@ en:
       url: /en/engineering/
     - title: Posts
       url: /en/posts/
+  job_title: Co-founder
   email_label: Email
   switch_label: Türkçe
   switch_home: /

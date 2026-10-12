@@ -62,6 +62,8 @@
         "name": {{ site.title | jsonify }},
         "url": {{ '/' | absolute_url | jsonify }},
         "image": {{ site.person_image | absolute_url | jsonify }},
+        "jobTitle": {{ t.job_title | jsonify }},
+        "worksFor": { "@type": "Organization", "name": "Codigno Yazılım" },
         "sameAs": {{ site.same_as | jsonify }}
       }
     ]
