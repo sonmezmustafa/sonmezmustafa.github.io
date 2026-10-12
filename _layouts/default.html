@@ -27,6 +27,7 @@
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ site.person_image | absolute_url }}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   {%- if page.description %}
   <meta property="og:description" content="{{ page.description | escape }}">
@@ -48,6 +49,7 @@
         "@id": {{ '/#person' | absolute_url | jsonify }},
         "name": {{ site.title | jsonify }},
         "url": {{ '/' | absolute_url | jsonify }},
+        "image": {{ site.person_image | absolute_url | jsonify }},
         "sameAs": {{ site.same_as | jsonify }}
       }
     ]

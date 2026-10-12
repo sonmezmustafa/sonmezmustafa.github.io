@@ -4,6 +4,8 @@ baseurl: ""
 markdown: kramdown
 timezone: Europe/Istanbul
 
+person_image: /assets/img/mustafa-sonmez.jpg
+
 # Kişi şemasındaki "sameAs": aynı kişiye ait diğer profiller
 same_as:
   - https://github.com/sonmezmustafa

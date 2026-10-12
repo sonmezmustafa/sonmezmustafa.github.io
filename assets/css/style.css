@@ -50,7 +50,7 @@ img { max-width: 100%; height: auto; }
 /* Ana sayfa */
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 21rem;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 2.5rem 4rem;
   align-items: center;
   padding: 3.5rem 0 4.5rem;
@@ -72,7 +72,8 @@ img { max-width: 100%; height: auto; }
 .photo {
   display: grid;
   place-items: center;
-  aspect-ratio: 4 / 5;
+  width: 12.5rem;
+  aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -156,5 +157,5 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 48rem) {
   .hero, .split, .areas { grid-template-columns: minmax(0, 1fr); }
   .hero { padding: 2rem 0 3rem; }
-  .photo { order: -1; width: 11rem; aspect-ratio: 1; }
+  .photo { order: -1; width: 9rem; }
 }
