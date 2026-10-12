@@ -18,6 +18,8 @@
   {%- if page.description %}
   <meta name="description" content="{{ page.description | escape }}">
   {%- endif %}
+  <meta name="robots" content="{% if page.noindex %}noindex, follow{% else %}index, follow, max-image-preview:large{% endif %}">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {%- if page.ref %}
   <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
@@ -27,6 +29,8 @@
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:locale" content="{% if page.lang == 'en' %}en_US{% else %}tr_TR{% endif %}">
+  <meta name="twitter:card" content="summary">
   <meta property="og:image" content="{{ site.person_image | absolute_url }}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   {%- if page.description %}
@@ -45,6 +49,14 @@
         "inLanguage": ["tr", "en"]
       },
       {
+        "@type": "ProfilePage",
+        "@id": {{ page.url | append: '#profile' | absolute_url | jsonify }},
+        "url": {{ page.url | absolute_url | jsonify }},
+        "inLanguage": {{ page.lang | jsonify }},
+        "isPartOf": { "@id": {{ '/#website' | absolute_url | jsonify }} },
+        "mainEntity": { "@id": {{ '/#person' | absolute_url | jsonify }} }
+      },
+      {
         "@type": "Person",
         "@id": {{ '/#person' | absolute_url | jsonify }},
         "name": {{ site.title | jsonify }},
@@ -53,6 +65,24 @@
         "sameAs": {{ site.same_as | jsonify }}
       }
     ]
+  }
+  </script>
+  {%- endif %}
+  {%- if page.layout == "post" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    "inLanguage": {{ page.lang | jsonify }},
+    "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+    "author": {
+      "@type": "Person",
+      "@id": {{ '/#person' | absolute_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }}
+    }
   }
   </script>
   {%- endif %}
