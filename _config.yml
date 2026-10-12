@@ -4,6 +4,10 @@ baseurl: ""
 markdown: kramdown
 timezone: Europe/Istanbul
 
+# Kişi şemasındaki "sameAs": aynı kişiye ait diğer profiller
+same_as:
+  - https://github.com/sonmezmustafa
+
 defaults:
   - scope:
       path: ""
@@ -28,6 +32,9 @@ defaults:
       layout: post
       lang: en
       permalink: /en/posts/:title/
+
+plugins:
+  - jekyll-sitemap
 
 exclude:
   - README.md
