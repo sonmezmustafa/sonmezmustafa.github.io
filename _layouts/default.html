@@ -1,0 +1,46 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign alt_url = t.switch_home -%}
+{%- if page.ref -%}
+  {%- for d in site.pages -%}
+    {%- if d.ref == page.ref and d.lang != page.lang -%}{%- assign alt_url = d.url -%}{%- endif -%}
+  {%- endfor -%}
+  {%- for d in site.posts -%}
+    {%- if d.ref == page.ref and d.lang != page.lang -%}{%- assign alt_url = d.url -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- if page.lang == "en" -%}{%- assign alt_lang = "tr" -%}{%- else -%}{%- assign alt_lang = "en" -%}{%- endif -%}
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  {%- if page.description %}
+  <meta name="description" content="{{ page.description | escape }}">
+  {%- endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- if page.ref %}
+  <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | absolute_url }}">
+  {%- endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="{{ t.home_url | relative_url }}">{{ site.title }}</a>
+    <nav>
+      <a href="{{ t.home_url | relative_url }}">{{ t.home }}</a>
+      <a href="{{ t.blog_url | relative_url }}">{{ t.blog }}</a>
+      <a class="lang" href="{{ alt_url | relative_url }}" lang="{{ alt_lang }}" hreflang="{{ alt_lang }}">{{ t.switch_label }}</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    © {{ site.time | date: "%Y" }} {{ site.title }}
+  </footer>
+</body>
+</html>

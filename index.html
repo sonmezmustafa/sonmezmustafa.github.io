@@ -1,0 +1,21 @@
+---
+ref: home
+description: Mustafa Sönmez'in kişisel sitesi ve blogu.
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+<section class="intro">
+  <h1>Merhaba, ben Mustafa Sönmez.</h1>
+  <p>[TASLAK — bir iki cümlelik tanıtım: ne iş yapıyorsun, nerede yaşıyorsun.]</p>
+</section>
+
+<section>
+  <h2>Hakkımda</h2>
+  <p>[TASLAK — geçmişin, bugün üzerinde çalıştıkların, ilgi alanların.]</p>
+  <p><a href="https://github.com/sonmezmustafa">GitHub</a></p>
+</section>
+
+<section>
+  <h2>{{ t.posts_title }}</h2>
+  {% include post-list.html limit=3 %}
+  <p><a href="{{ t.blog_url | relative_url }}">{{ t.all_posts }} →</a></p>
+</section>

@@ -1,0 +1,33 @@
+title: Mustafa Sönmez
+url: "https://sonmezmustafa.com"
+baseurl: ""
+markdown: kramdown
+timezone: Europe/Istanbul
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: tr
+  - scope:
+      path: "en"
+    values:
+      lang: en
+  - scope:
+      path: "_posts/tr"
+      type: posts
+    values:
+      layout: post
+      lang: tr
+      permalink: /blog/:title/
+  - scope:
+      path: "_posts/en"
+      type: posts
+    values:
+      layout: post
+      lang: en
+      permalink: /en/blog/:title/
+
+exclude:
+  - README.md

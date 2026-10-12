@@ -1,0 +1,21 @@
+---
+ref: home
+description: Personal site and blog of Mustafa Sönmez.
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+<section class="intro">
+  <h1>Hi, I'm Mustafa Sönmez.</h1>
+  <p>[DRAFT — one or two sentences: what you do, where you live.]</p>
+</section>
+
+<section>
+  <h2>About</h2>
+  <p>[DRAFT — your background, what you are working on now, your interests.]</p>
+  <p><a href="https://github.com/sonmezmustafa">GitHub</a></p>
+</section>
+
+<section>
+  <h2>{{ t.posts_title }}</h2>
+  {% include post-list.html limit=3 %}
+  <p><a href="{{ t.blog_url | relative_url }}">{{ t.all_posts }} →</a></p>
+</section>

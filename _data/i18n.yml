@@ -1,0 +1,28 @@
+tr:
+  home: Ana sayfa
+  blog: Blog
+  home_url: /
+  blog_url: /blog/
+  switch_label: English
+  switch_home: /en/
+  posts_title: Son yazılar
+  all_posts: Tüm yazılar
+  no_posts: Henüz yazı yok.
+  back_to_blog: Tüm yazılar
+  date_format: "%d.%m.%Y"
+  not_found: Sayfa bulunamadı
+  not_found_text: Aradığın sayfa burada değil.
+en:
+  home: Home
+  blog: Blog
+  home_url: /en/
+  blog_url: /en/blog/
+  switch_label: Türkçe
+  switch_home: /
+  posts_title: Latest posts
+  all_posts: All posts
+  no_posts: No posts yet.
+  back_to_blog: All posts
+  date_format: "%b %-d, %Y"
+  not_found: Page not found
+  not_found_text: The page you are looking for is not here.
