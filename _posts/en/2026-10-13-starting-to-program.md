@@ -1,5 +1,5 @@
 ---
-title: Starting to Program
+title: Starting to Program (Trying to Understand)
 ref: programlamaya-baslamak
 description: 'On understanding the problem before writing code: listening, acting the process out together, and only then designing the solution.'
 ---

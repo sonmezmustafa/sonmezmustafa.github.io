@@ -1,5 +1,5 @@
 ---
-title: Programlamaya Başlamak
+title: Programlamaya Başlamak (Anlamaya Çalışmak)
 ref: programlamaya-baslamak
 description: 'Kod yazmadan önce sorunu anlamak: dinlemek, süreci birlikte canlandırmak ve çözümü ondan sonra tasarlamak üzerine.'
 ---
