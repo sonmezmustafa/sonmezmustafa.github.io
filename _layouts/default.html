@@ -76,6 +76,7 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": {{ page.title | jsonify }},
+    "description": {{ page.description | jsonify }},
     "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
     "inLanguage": {{ page.lang | jsonify }},
     "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},

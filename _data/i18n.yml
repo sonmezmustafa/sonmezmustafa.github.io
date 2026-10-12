@@ -1,6 +1,8 @@
 tr:
   home_url: /
   posts_url: /yazilar/
+  engineering_url: /muhendislik/
+  engineering_all: Tüm mühendislik yazıları
   nav:
     - title: Projeler
       url: /projeler/
@@ -19,6 +21,8 @@ tr:
 en:
   home_url: /en/
   posts_url: /en/posts/
+  engineering_url: /en/engineering/
+  engineering_all: All engineering essays
   nav:
     - title: Projects
       url: /en/projects/

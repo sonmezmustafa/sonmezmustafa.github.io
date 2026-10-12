@@ -7,4 +7,8 @@ layout: default
   <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: t.date_format }}</time></p>
   {{ content }}
 </article>
+{%- if page.section == "engineering" %}
+<p class="back"><a href="{{ t.engineering_url | relative_url }}">← {{ t.engineering_all }}</a></p>
+{%- else %}
 <p class="back"><a href="{{ t.posts_url | relative_url }}">← {{ t.all_posts }}</a></p>
+{%- endif %}
