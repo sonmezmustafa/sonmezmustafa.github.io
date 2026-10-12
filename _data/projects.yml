@@ -1,0 +1,21 @@
+# Proje dalları. Bir dala proje eklemek için "items" listesine şu biçimde satır ekle:
+#   items:
+#     - url: https://ornek.com        (isteğe bağlı)
+#       tr: { name: "Proje adı", text: "Bir iki cümle." }
+#       en: { name: "Project name", text: "One or two sentences." }
+- id: web-mobil
+  tr: { title: "Web / Mobil", text: "Web uygulamaları ve mobil uygulamalar." }
+  en: { title: "Web / Mobile", text: "Web and mobile applications." }
+  items: []
+- id: iot
+  tr: { title: "IoT", text: "Sahadaki cihazlardan veri toplayan, internete bağlı sistemler." }
+  en: { title: "IoT", text: "Connected systems that collect data from devices in the field." }
+  items: []
+- id: scada
+  tr: { title: "SCADA", text: "Tesis ve süreçlerin uzaktan izlenmesi ve kontrolü." }
+  en: { title: "SCADA", text: "Remote monitoring and control of plants and processes." }
+  items: []
+- id: elektronik
+  tr: { title: "Elektronik", text: "Devre ve kart tasarımı, gömülü sistemler." }
+  en: { title: "Electronics", text: "Circuit and board design, embedded systems." }
+  items: []

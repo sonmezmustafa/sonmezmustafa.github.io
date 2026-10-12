@@ -142,6 +142,23 @@ img { max-width: 100%; height: auto; }
 }
 .page blockquote { margin: 1.25rem 0; padding-left: 1rem; border-left: 3px solid var(--line); color: var(--muted); }
 
+/* Proje dalları */
+.branches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.page .branch {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+  min-width: 0;
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+}
+.page .branch h2 { margin: 0; font-size: 1.25rem; letter-spacing: 0; }
+.page .branch p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.55; }
+.page .branch ul { list-style: none; margin: 0.6rem 0 0; padding: 0; display: grid; gap: 0.9rem; }
+.page .branch h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +172,7 @@ img { max-width: 100%; height: auto; }
 .site-footer .links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; }
 
 @media (max-width: 48rem) {
-  .hero, .split, .areas { grid-template-columns: minmax(0, 1fr); }
+  .hero, .split, .areas, .branches { grid-template-columns: minmax(0, 1fr); }
   .hero { padding: 2rem 0 3rem; }
   .photo { order: -1; width: 9rem; }
 }
