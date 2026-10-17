@@ -19,7 +19,7 @@
   --card-deep: #1F4F8F;
   --col: 65.5rem;
   --gutter: 1.25rem;
-  --serif: "Literata", Georgia, "Times New Roman", serif;
+  --serif: Georgia, "Noto Serif", "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; }
@@ -86,7 +86,7 @@ main:not(.page) > :not(.hero),
   text-decoration-thickness: 2px;
   text-underline-offset: 0.45em;
 }
-.top nav .lang { color: var(--on-deep-muted); font-size: 0.92rem; font-style: italic; }
+.top nav .lang { color: var(--on-deep-muted); font-size: 0.92rem; }
 
 .hero {
   display: grid;
@@ -96,8 +96,8 @@ main:not(.page) > :not(.hero),
   padding-block: 3.5rem 4rem;
 }
 .hero-text { display: grid; gap: 1.1rem; }
-.hero h1 { color: var(--on-deep); font-size: clamp(2.3rem, 5vw, 3.4rem); letter-spacing: -0.01em; line-height: 1.1; }
-.eyebrow { color: var(--on-deep-muted); font-size: 1.1rem; font-style: italic; }
+.hero h1 { color: var(--on-deep); font-size: clamp(2.2rem, 4.6vw, 3.1rem); line-height: 1.15; }
+.eyebrow { color: var(--on-deep-muted); font-size: 1.05rem; }
 .lead { max-width: 34rem; color: var(--on-deep-soft); font-size: 1.2rem; line-height: 1.6; }
 .actions { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.6rem 1.6rem; margin-top: 0.3rem; }
 .hero .actions a { color: var(--on-deep); text-decoration-color: var(--sky-line); }
@@ -168,19 +168,19 @@ main:not(.page) > :not(.hero),
 .posts time { flex: 0 0 6.4rem; color: var(--muted); font-size: 0.95rem; font-variant-numeric: tabular-nums; }
 .posts a { color: var(--deep); text-decoration: none; font-size: 1.08rem; font-weight: 600; }
 .posts a:hover { color: var(--deep); background: linear-gradient(transparent 58%, var(--marker) 58%); }
-.posts .desc { display: block; margin-top: 0.1rem; color: var(--muted); font-size: 0.98rem; font-style: italic; line-height: 1.5; }
+.posts .desc { display: block; margin-top: 0.1rem; color: var(--muted); font-size: 0.98rem; line-height: 1.5; }
 .more { margin-top: 1rem; font-weight: 600; }
 
 .page { padding-block: 2.75rem 4rem; }
 .page > * { max-width: 44rem; }
 .page > article { max-width: 38rem; }
-.page h1 { font-size: clamp(2rem, 4.5vw, 2.7rem); letter-spacing: -0.01em; margin-bottom: 1.25rem; }
+.page h1 { font-size: clamp(2rem, 4.5vw, 2.6rem); margin-bottom: 1.25rem; }
 .page h2 { font-size: 1.5rem; margin: 2.2rem 0 0.8rem; }
 .page h3 { font-size: 1.2rem; margin: 1.8rem 0 0.6rem; }
 .page p, .page ul, .page ol { margin-bottom: 1rem; }
 .page article p { font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.15rem; }
 .page .posts { margin-bottom: 0; }
-.page .meta { margin-top: -0.5rem; margin-bottom: 1.8rem; color: var(--muted); font-size: 1rem; font-style: italic; }
+.page .meta { margin-top: -0.5rem; margin-bottom: 1.8rem; color: var(--muted); font-size: 1rem; }
 .page .back { margin-top: 3rem; }
 .page pre {
   overflow-x: auto;
