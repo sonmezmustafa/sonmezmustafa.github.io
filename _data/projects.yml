@@ -1,8 +1,3 @@
-# Proje dalları. Bir dala proje eklemek için "items" listesine şu biçimde satır ekle:
-#   items:
-#     - url: https://ornek.com        (isteğe bağlı)
-#       tr: { name: "Proje adı", text: "Bir iki cümle." }
-#       en: { name: "Project name", text: "One or two sentences." }
 - id: web-mobil
   tr: { title: "Web / Mobil", text: "Web uygulamaları ve mobil uygulamalar." }
   en: { title: "Web / Mobile", text: "Web and mobile applications." }
