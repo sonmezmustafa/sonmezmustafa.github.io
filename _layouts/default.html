@@ -64,6 +64,7 @@
         "image": {{ site.person_image | absolute_url | jsonify }},
         "jobTitle": {{ t.job_title | jsonify }},
         "worksFor": { "@type": "Organization", "name": "Codigno Yazılım", "url": "https://codigno.com/" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Orta Doğu Teknik Üniversitesi", "alternateName": ["ODTÜ", "METU", "Middle East Technical University"], "url": "https://www.metu.edu.tr/" },
         "sameAs": {{ site.same_as | jsonify }}
       }
     ]
