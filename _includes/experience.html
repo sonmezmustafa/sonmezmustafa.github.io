@@ -1,0 +1,75 @@
+{%- assign X = site.data.experience -%}
+{%- assign L = page.lang -%}
+{%- assign U = X.ui[L] -%}
+{%- assign C = X.center[L] -%}
+<div class="xp" id="xp" data-lang="{{ L }}">
+  <p class="xp-intro">{{ U.intro }}</p>
+
+  <dl class="xp-stats">
+    {%- for s in X.stats %}
+    <div><dt>{{ s[L].value }}</dt><dd>{{ s[L].label }}</dd></div>
+    {%- endfor %}
+  </dl>
+
+  <div class="xp-map" hidden>
+    <div class="xp-legend">
+      {%- for arm in X.arms %}
+      <span class="xp-key" data-arm="{{ arm.id }}"><i></i>{{ arm[L].name }}</span>
+      {%- endfor %}
+      <button class="xp-reset" type="button">{{ U.reset }}</button>
+    </div>
+    <div class="xp-stage">
+      <svg class="xp-lines" viewBox="0 0 1000 980" preserveAspectRatio="none" aria-hidden="true"></svg>
+    </div>
+    <div class="xp-drawer" aria-live="polite"></div>
+  </div>
+
+  <div class="xp-list">
+    <section class="xp-sum">
+      <h2>{{ C.title }}</h2>
+      <p>{{ C.text }}</p>
+      <h3>{{ U.roles_title }}</h3>
+      <ol class="xp-roles">
+        {%- for r in C.roles %}
+        <li>{{ r }}</li>
+        {%- endfor %}
+      </ol>
+      <h3>{{ U.tools_title }}</h3>
+      <p class="xp-tools">{{ C.tools }}</p>
+    </section>
+    {%- for arm in X.arms %}
+    <section class="xp-arm" data-arm="{{ arm.id }}">
+      <h2>{{ arm[L].name }}</h2>
+      <p>{{ arm[L].text }}</p>
+      {%- for node in arm.nodes %}
+      <details>
+        <summary>{{ node[L].name }}</summary>
+        <p>{{ node[L].text }}</p>
+        {%- if node.works %}
+        <ul class="xp-works">
+          {%- for w in node.works %}
+          <li>
+            <h3>{% if w.url %}<a href="{{ w.url }}">{{ w[L].name }}</a>{% else %}{{ w[L].name }}{% endif %}{% if w.codigno %} <span class="xp-pill">{{ U.codigno }}</span>{% endif %}</h3>
+            <p>{{ w[L].text }}</p>
+            {%- if w[L].mods %}
+            <p class="xp-mods">{% for m in w[L].mods %}<span>{{ m }}</span>{% endfor %}</p>
+            {%- endif %}
+          </li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+        {%- if node.links %}
+        <p class="xp-rel">{{ U.related }}:
+          {%- for id in node.links %}
+          {%- for a2 in X.arms %}{%- for n2 in a2.nodes %}{%- if n2.id == id %} {{ n2[L].name }}{%- endif %}{%- endfor %}{%- endfor %}{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        </p>
+        {%- endif %}
+      </details>
+      {%- endfor %}
+    </section>
+    {%- endfor %}
+  </div>
+</div>
+<script type="application/json" id="xp-data">{{ X | jsonify }}</script>
+<script src="{{ '/assets/js/experience-map.js' | relative_url }}" defer></script>

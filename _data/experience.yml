@@ -1,0 +1,261 @@
+ui:
+  tr:
+    intro: "Yirmi yıla yakın sürede yaptığım işlerin haritası. Kamuya ait kimya tesislerinden büyük inşaat gruplarına, bir bakanlığın yüzlerce sitesinden şarj istasyonlarına kadar. Bir düğüm seçin; çizgiler o işin hangi alanlara ve sektörlere dokunduğunu gösterir, işler ve alt modülleri hemen altında listelenir."
+    reset: "Tümünü göster"
+    related: "Bağlantılı"
+    contains: "Bu koldakiler"
+    codigno: "Codigno"
+    roles_title: "Yol"
+    tools_title: "Araçlar"
+    open: "Ayrıntı"
+  en:
+    intro: "A map of the work I have done over nearly twenty years. From state-owned chemical plants to major construction groups, from a ministry's hundreds of websites to EV chargers. Pick a node; the lines show which fields and sectors that work touches, and the work and its modules are listed right below."
+    reset: "Show all"
+    related: "Connected"
+    contains: "In this branch"
+    codigno: "Codigno"
+    roles_title: "Path"
+    tools_title: "Tools"
+    open: "Details"
+
+center:
+  tr:
+    name: "Mustafa Sönmez"
+    tag: "20 yıla yakın tecrübe"
+    title: "Toplam tecrübe"
+    text: "ODTÜ'de inşaat mühendisliği okurken aldığım programlama dersleri yönümü yazılıma çevirdi. O günden bu yana otuzdan fazla yazılımda analist, geliştirici, ekip lideri ve proje yöneticisi olarak çalıştım. Bu işlerin bir ucunda 25.000 I/O'luk bir kimya tesisinin kontrol odası, öbür ucunda büyük inşaat gruplarının hakediş, satın alma ve finans sistemleri var. Arada bir bakanlığın 800 sitesi, ülke ölçeğinde elektrik tüketimi tahmini ve yıllar süren bir makine öğrenmesi danışmanlığı duruyor. Bugün bu birikimi Codigno'da kendi ürünlerimize ve projelerimize çeviriyoruz."
+    roles:
+      - "İnşaat şirketinde yarı zamanlı mühendis yardımcısı"
+      - "Analist"
+      - "Full stack geliştirici"
+      - "Yazılım ekip lideri ve ürün yöneticisi"
+      - "Kurucu ortak ve proje yöneticisi"
+    tools: "PHP, Go, C#, Python, Java, Fortran, Matlab · ABB 800xA DCS, Siemens PLC, Kepware OPC · MySQL, MSSQL, PostgreSQL, NoSQL · AutoCAD, SAP2000, LARSA, Primavera, MS Project"
+  en:
+    name: "Mustafa Sönmez"
+    tag: "nearly 20 years"
+    title: "Total experience"
+    text: "The programming courses I took while studying civil engineering at METU turned me towards software. Since then I have worked on more than thirty software systems as an analyst, developer, team lead and project manager. At one end of this work is the control room of a 25,000 I/O chemical plant; at the other, the progress payment, purchasing and finance systems of major construction groups. In between sit a ministry's 800 websites, a nationwide electricity consumption forecast and a machine learning engagement that ran for years. Today we turn that experience into our own products and projects at Codigno."
+    roles:
+      - "Part-time assistant engineer at a construction company"
+      - "Analyst"
+      - "Full stack developer"
+      - "Software team lead and product manager"
+      - "Co-founder and project manager"
+    tools: "PHP, Go, C#, Python, Java, Fortran, Matlab · ABB 800xA DCS, Siemens PLC, Kepware OPC · MySQL, MSSQL, PostgreSQL, NoSQL · AutoCAD, SAP2000, LARSA, Primavera, MS Project"
+
+stats:
+  - tr: { value: "20 yıla yakın", label: "mühendislik ve yazılım" }
+    en: { value: "Nearly 20 years", label: "of engineering and software" }
+  - tr: { value: "30'dan fazla", label: "yazılım projesi" }
+    en: { value: "30+", label: "software projects" }
+  - tr: { value: "25.000 I/O", label: "en büyük kontrol sistemi" }
+    en: { value: "25,000 I/O", label: "largest control system" }
+  - tr: { value: "800 site", label: "tek içerik yönetiminde" }
+    en: { value: "800 sites", label: "on one content system" }
+
+arms:
+  - id: alan
+    angle: 180
+    tr: { name: "Mühendislik Alanları", tag: "Sahadan ekrana", text: "Kontrol odasındaki sistemden telefondaki uygulamaya kadar çalıştığım beş alan. Çoğu projede bunların birkaçı aynı anda devreye girdi: tesisi kumanda eden sistemin verisi web ve mobilde, tahmin modelleri iş yazılımının içinde." }
+    en: { name: "Engineering Fields", tag: "From field to screen", text: "Five fields I work in, from the control room system to the app on a phone. Most projects used several at once: plant control data on web and mobile, forecasting models inside business software." }
+    nodes:
+      - id: scada
+        tr: { name: "SCADA ve Otomasyon", tag: "Tesisin kumandası", text: "Kamuya ait büyük maden ve kimya tesislerinde, binlerce noktanın tek kontrol odasından yönetildiği sistemler. ABB 800xA DCS üzerinde otomasyon yazılımcısı olarak başladım; bugün Codigno'da aynı işin proje yöneticiliğini yapıyorum." }
+        en: { name: "SCADA and Automation", tag: "Running the plant", text: "Systems that run thousands of points from a single control room at large state-owned mining and chemical plants. I started as an automation programmer on ABB 800xA DCS; today I manage the same kind of work at Codigno." }
+        works:
+          - tr: { name: "Büyük bir kimya tesisinin ana kontrol sistemi", text: "Türkiye'nin en büyük kimya tesislerinden birinde, iki yıl süren proje. 25.000 I/O; sahadaki motorlar, vanalar, debimetreler ve tesisteki çok sayıda işlemci tek kontrol odasından yönetiliyor. Tesis, yüzde 90 oranında operatör müdahalesi olmadan çalışabilecek şekilde kuruldu.", mods: ["25.000 I/O", "Motor ve vana kumandası", "Debimetre ve enstrümanlar", "İşlemci entegrasyonu", "Otomasyon programlaması", "ABB 800xA DCS"] }
+            en: { name: "Main control system of a large chemical plant", text: "A two-year project at one of Turkey's largest chemical plants. 25,000 I/O; field motors, valves, flow meters and many plant processors run from a single control room. The plant was built to run 90 percent of the time without operator intervention.", mods: ["25,000 I/O", "Motor and valve control", "Flow meters and instruments", "Processor integration", "Automation programming", "ABB 800xA DCS"] }
+          - tr: { name: "Kimya fabrikası ana kontrol sistemi", text: "İki yıl süren, 2.500 I/O'luk sistemde otomasyon programlaması. Ana kumandanın yanında yerel makinelerin küçük PLC programlarını da devreye aldım.", mods: ["2.500 I/O", "Ana kumanda sistemi", "Yerel makine PLC'leri", "Devreye alma"] }
+            en: { name: "Chemical factory main control system", text: "Automation programming on a 2,500 I/O system over two years. Alongside the main control, I commissioned the small PLC programs of local machines.", mods: ["2,500 I/O", "Main control system", "Local machine PLCs", "Commissioning"] }
+          - tr: { name: "İkinci bir fabrikanın ana kontrol sistemi", text: "1.500 I/O'luk sistem. Sahadaki pek çok farklı cihazın verisi farklı protokollerle alınıp tek ana kumandada birleştirildi.", mods: ["1.500 I/O", "Modbus", "Profibus", "Profinet", "Saha cihazı entegrasyonu"] }
+            en: { name: "Main control system of a second factory", text: "A 1,500 I/O system. Data from many different field devices was brought in over different protocols and joined in one main control.", mods: ["1,500 I/O", "Modbus", "Profibus", "Profinet", "Field device integration"] }
+          - tr: { name: "Merkezi yük atma sistemi", text: "Tesisin enerji tarafında iki türbin ve çok sayıda trafonun verisini anlık okuyup, gerektiğinde yükleri devreden çıkaran yazılım. Tesisin enerjisi kesilmeden ayakta kalmasını sağlayan katman.", mods: ["Türbin verisi", "Trafo verisi", "Yük atma mantığı"] }
+            en: { name: "Central load shedding system", text: "Software that reads two turbines and many transformers in real time and sheds loads when needed. The layer that keeps the plant running without losing power.", mods: ["Turbine data", "Transformer data", "Load shedding logic"] }
+          - codigno: true
+            url: "https://codigno.com/cozum/endustriyel-otomasyon/"
+            tr: { name: "Endüstriyel otomasyon", text: "Tesis içindeki işi kuruyoruz. Programın kaynağı müşteriye teslim ediliyor; hat kimseye bağlı kalmıyor.", mods: ["PLC programlama", "SCADA ve HMI", "Endüstriyel haberleşme", "Üretim ve enerji otomasyonu", "Mevcut sistem entegrasyonu"] }
+            en: { name: "Industrial automation", text: "We build the work inside the plant. The program source is handed to the client, so the line is not tied to anyone.", mods: ["PLC programming", "SCADA and HMI", "Industrial networking", "Production and energy automation", "Legacy system integration"] }
+          - codigno: true
+            tr: { name: "Şarj istasyonu güç ve şebeke kumandası", text: "Şarj istasyonlarını besleyen kesintisiz güç kaynakları ve şebeke entegrasyonu için kumanda ve uyarı yazılımı. Proje yöneticisi olarak.", mods: ["Kesintisiz güç kaynakları", "Şebeke entegrasyonu", "Kumanda", "Uyarı sistemi"] }
+            en: { name: "Power and grid control for EV chargers", text: "Control and alarm software for the uninterruptible power supplies and grid connection that feed EV chargers. As project manager.", mods: ["Uninterruptible power supplies", "Grid integration", "Control", "Alarms"] }
+          - codigno: true
+            tr: { name: "Veri merkezi ana kumanda sistemi", text: "Ulusal ölçekte bir araştırma kurumunun veri merkezinin ana kumanda sistemini ve raporlamasını sağlayan yazılım. Proje yöneticisi olarak.", mods: ["Ana kumanda", "Raporlama"] }
+            en: { name: "Data center main control system", text: "Software providing main control and reporting for the data center of a national research institution. As project manager.", mods: ["Main control", "Reporting"] }
+      - id: iot
+        tr: { name: "IoT ve Uzaktan İzleme", tag: "Sahadan veri", text: "Tesisteki ve sahadaki veriyi kontrol odasının dışına taşıyıp yönetimin telefonuna kadar getiren katman." }
+        en: { name: "IoT and Remote Monitoring", tag: "Data from the field", text: "The layer that carries plant and field data out of the control room and all the way to management's phones." }
+        works:
+          - tr: { name: "Tesis uzaktan izleme ve raporlama", text: "25.000 I/O'luk tesisin kontrol sistemindeki ve sahadaki veriler OPC üzerinden ayrı bir veritabanına alınıp web ve mobil uygulamada sunuldu. Günde milyonlarca kaydı işleyen veritabanı tasarımı ve optimizasyonu, bu işte öğrendiğim en değerli şeylerden.", mods: ["OPC veri aktarımı", "Ayrı veritabanı", "Günde milyonlarca kayıt", "Web raporları", "Mobil uygulama"] }
+            en: { name: "Plant remote monitoring and reporting", text: "Control system and field data from the 25,000 I/O plant was pulled over OPC into a separate database and served on web and mobile. Designing and tuning a database that handles millions of records a day is one of the most valuable things this job taught me.", mods: ["OPC data transfer", "Separate database", "Millions of records a day", "Web reports", "Mobile app"] }
+          - codigno: true
+            url: "https://codigno.com/cozum/iot-cozumleri/"
+            tr: { name: "Uçtan uca IoT", text: "Sahadaki bilgiyi ölçülebilir hale getiriyoruz. Dağınık sahaları olan, birden fazla lokasyonda çalışan işletmeler buradan başlıyor.", mods: ["IoT sistem tasarımı", "Sensör ve gateway entegrasyonu", "Uzaktan izleme ve kontrol", "Edge ve bulut IoT", "Enerji, filo ve saha IoT"] }
+            en: { name: "End-to-end IoT", text: "We make field information measurable. Businesses with scattered sites or several locations start here.", mods: ["IoT system design", "Sensor and gateway integration", "Remote monitoring and control", "Edge and cloud IoT", "Energy, fleet and field IoT"] }
+      - id: web
+        tr: { name: "Web ve Mobil", tag: "Kullanıcının ekranı", text: "Yüzlerce siteyi tek merkezden yöneten içerik sistemlerinden sahadaki ekibin cebindeki uygulamaya kadar." }
+        en: { name: "Web and Mobile", tag: "The user's screen", text: "From content systems that run hundreds of sites from one centre to the app in a field team's pocket." }
+        works:
+          - tr: { name: "Bakanlık web sitesi ve intraneti", text: "Bir bakanlığın ana sitesi, ona bağlı 800 site ve merkezi intranet; hepsi tek bir ortak içerik yönetim sistemi üzerinde. Tasarımdan yayına kadar projede yönetici olarak görev aldım.", mods: ["Ana site", "800 bağlı site", "Ortak içerik yönetim sistemi", "Merkezi intranet", "Tasarım"] }
+            en: { name: "Ministry website and intranet", text: "A ministry's main site, 800 affiliated sites and a central intranet, all on one shared content management system. I managed the project from design to launch.", mods: ["Main site", "800 affiliated sites", "Shared content management", "Central intranet", "Design"] }
+          - codigno: true
+            url: "https://codigno.com/cozum/web-mobil-yazilim/"
+            tr: { name: "Kurumsal web ve mobil yazılım", text: "Hazır paketin yetmediği yerde size özel iş uygulaması. Kaynak kod müşteriye ait, veri istendiği an alınabilecek yapıda.", mods: ["Kurumsal özel yazılım", "Web tabanlı iş uygulamaları", "Mobil uygulamalar", "SaaS platform geliştirme", "Raporlama ve analitik"] }
+            en: { name: "Custom web and mobile software", text: "Custom business applications where off-the-shelf software falls short. The client owns the source code and can take the data at any time.", mods: ["Custom enterprise software", "Web business applications", "Mobile apps", "SaaS platform development", "Reporting and analytics"] }
+      - id: veri
+        tr: { name: "Veri ve Modelleme", tag: "Tahmin ve analiz", text: "Matematiksel model, makine öğrenmesi ve otomatik tarama ile veriden karar çıkarılan işler. Mühendislik eğitiminin en çok işe yaradığı yer." }
+        en: { name: "Data and Modelling", tag: "Forecasts and analysis", text: "Work that turns data into decisions with mathematical models, machine learning and automated crawling. Where engineering training pays off most." }
+        works:
+          - tr: { name: "Pazarlama birimi için veri ve makine öğrenmesi", text: "Dünyanın en büyük teknoloji şirketlerinden birinin Türkiye pazarlama birimine üç yıl süren danışmanlık. Türkiye'deki çok sayıda web sitesinin içeriği otomatik taranıp modellenerek pazarlama birimine veri üretildi. Değişik evrelerde proje yöneticisi, veritabanı geliştiricisi ve yazılımcı olarak çalıştım.", mods: ["Otomatik web tarama", "Makine öğrenmesi", "Matematiksel modelleme", "Veri üretimi", "Danışmanlık"] }
+            en: { name: "Data and machine learning for a marketing unit", text: "A three-year engagement for the Turkey marketing unit of one of the world's largest technology companies. The content of a large number of websites in Turkey was crawled and modelled automatically to produce data for the marketing team. Over the phases I worked as project manager, database developer and programmer.", mods: ["Automated web crawling", "Machine learning", "Mathematical modelling", "Data production", "Consulting"] }
+          - tr: { name: "Elektrik piyasası teklif programı", text: "Bir enerji ticaret şirketi için, Türkiye'nin saatlik elektrik tüketimini tahmin eden matematiksel modellere dayanarak anlık fiyat teklifi hazırlayan program.", mods: ["Saatlik tüketim tahmini", "Matematiksel model", "Anlık fiyat teklifi"] }
+            en: { name: "Electricity market bidding software", text: "For an energy trading company, software that prepares live price bids from mathematical models forecasting Turkey's hourly electricity consumption.", mods: ["Hourly consumption forecast", "Mathematical model", "Live price bids"] }
+      - id: elektronik
+        tr: { name: "Elektronik ve Gömülü", tag: "Cihazın kendisi", text: "Hazır karşılığı olmayan cihazın kartı ve gömülü yazılımı. Codigno'da donanımı da yazılımı da aynı ekip yapıyor." }
+        en: { name: "Electronics and Embedded", tag: "The device itself", text: "The board and firmware of a device that has no off-the-shelf equivalent. At Codigno the same team builds the hardware and the software." }
+        works:
+          - codigno: true
+            url: "https://codigno.com/rtls/codigno-tag-pro/"
+            tr: { name: "Konum takip etiketi", text: "Kendi konum takip etiketimizi tasarladık, ürünleştirdik ve sahaya çıkardık.", mods: ["UWB etiket", "Kart tasarımı", "Gömülü yazılım", "Saha testi"] }
+            en: { name: "Location tracking tag", text: "We designed our own location tracking tag, turned it into a product and put it in the field.", mods: ["UWB tag", "Board design", "Firmware", "Field testing"] }
+          - codigno: true
+            url: "https://codigno.com/cozum/elektronik-gomulu-sistemler/"
+            tr: { name: "Elektronik ve gömülü sistemler", text: "İhtiyaca uyan hazır cihaz yoksa o cihazı tasarlayıp üretime hazır halde teslim ediyoruz.", mods: ["Elektronik devre tasarımı", "Gömülü yazılım ve firmware", "Prototipleme ve test", "Ürünleştirme ve seri üretim"] }
+            en: { name: "Electronics and embedded systems", text: "When no off-the-shelf device fits, we design it and deliver it ready for production.", mods: ["Circuit design", "Embedded software and firmware", "Prototyping and testing", "Productisation and mass production"] }
+
+  - id: is
+    angle: 0
+    tr: { name: "İş Yazılımları", tag: "Şirketin süreçleri", text: "Tekliften hakedişe, satın almadan finansa kadar büyük şirketlerin günlük işini yöneten yazılımlar. Yalnızca büyük bir müteahhitlik grubu için yedi ayrı sistem yazdık. Çoğunda hem veritabanı tasarımında hem geliştirmede çalıştım." }
+    en: { name: "Business Software", tag: "How a company runs", text: "Software that runs the daily work of large companies, from bids to progress payments, from purchasing to finance. For one major contracting group alone we wrote seven separate systems. On most of them I worked on both database design and development." }
+    nodes:
+      - id: teklif
+        tr: { name: "Teklif ve Maliyet", tag: "İşe girmeden önce", text: "Bir işin maliyetini önceden görmek ve ihaleye hızlı girmek için kurulan sistemler." }
+        en: { name: "Bids and Cost", tag: "Before the job starts", text: "Systems built to see a job's cost in advance and to enter tenders quickly." }
+        works:
+          - tr: { name: "İhale ve teklif hazırlama", text: "Türkiye'nin en büyük inşaat gruplarından biri için. Fiyat veritabanı, ona dayanan analizler ve temel emtia fiyatlarının piyasa koşullarına göre davranış modelleri tek yerde toplandı; amaç hızlı ve tutarlı teklif. Proje yöneticisi, tasarımcı ve yazılımcı olarak.", mods: ["Fiyat veritabanı", "Birim fiyat analizleri", "Emtia fiyat modelleri", "Teklif hazırlama"] }
+            en: { name: "Tender and bid preparation", text: "For one of Turkey's largest construction groups. A price database, the analyses built on it and models of how core commodity prices move with the market, all in one place, for fast and consistent bids. As project manager, designer and programmer.", mods: ["Price database", "Unit price analysis", "Commodity price models", "Bid preparation"] }
+          - tr: { name: "Yaklaşık maliyet programı", text: "Büyük bir müteahhitlik firması için, birim fiyat analiziyle bir projenin yaklaşık maliyetini hesaplayan .NET yazılımı. Veritabanı tasarımında ve devreye almada.", mods: ["Birim fiyat analizi", "Yaklaşık maliyet", "Veritabanı tasarımı", ".NET"] }
+            en: { name: "Cost estimating software", text: "For a major contractor, .NET software that calculates a project's approximate cost from unit price analysis. On database design and commissioning.", mods: ["Unit price analysis", "Cost estimate", "Database design", ".NET"] }
+      - id: santiye
+        tr: { name: "Şantiye ve Proje Takibi", tag: "İş sahada", text: "Planlanan ile gerçekleşenin, taşeronun ve hakedişin takip edildiği sistemler. İnşaat mühendisliği eğitimimin en doğrudan karşılık bulduğu yer." }
+        en: { name: "Site and Project Tracking", tag: "Work on site", text: "Systems that track plan against actual, subcontractors and progress payments. Where my civil engineering training applies most directly." }
+        works:
+          - tr: { name: "Şantiye takip sistemi", text: "Türkiye'nin en büyük inşaat gruplarından biri için. Taşeronların ve işlerin performansı, inşaat proje yönetimindeki SPI ve CPI gibi göstergelerle izleniyor. Proje yöneticisi, tasarımcı ve yazılımcı olarak.", mods: ["Taşeron performansı", "İş performansı", "SPI", "CPI"] }
+            en: { name: "Construction site tracking system", text: "For one of Turkey's largest construction groups. Subcontractor and work performance tracked with project management indicators such as SPI and CPI. As project manager, designer and programmer.", mods: ["Subcontractor performance", "Work performance", "SPI", "CPI"] }
+          - tr: { name: "Şantiye yönetim sistemi", text: "Bir inşaat şirketinin şantiyeleri için taşeron hakedişlerinden onay süreçlerine kadar şantiyenin evrak ve para tarafı.", mods: ["Taşeron hakedişi", "Puantaj", "Proje dokümantasyonu", "Onay süreçleri"] }
+            en: { name: "Construction site management system", text: "The paperwork and money side of a construction company's sites, from subcontractor progress payments to approval workflows.", mods: ["Subcontractor payments", "Timesheets", "Project documents", "Approval workflows"] }
+          - tr: { name: "Saha takip programı", text: "İşçilerin planlanan ve gerçekleşen performansı ölçülüp, matematik modellerle işin ne zaman biteceği öngörülüyor.", mods: ["Planlanan ve gerçekleşen", "İşçi performansı", "Bitiş tahmini"] }
+            en: { name: "Field tracking software", text: "Planned and actual worker performance is measured, and mathematical models forecast when the job will finish.", mods: ["Plan versus actual", "Worker performance", "Completion forecast"] }
+          - tr: { name: "Proje takip programı", text: "Büyük bir müteahhitlik grubunda, mühendis ve teknisyenlerin projelere harcadığı emek ölçülüyor; fazlara göre performans ve maliyet analizi yapılıyor.", mods: ["Emek ölçümü", "Faz bazlı performans", "Maliyet analizi"] }
+            en: { name: "Project tracking software", text: "At a major contracting group, measures the effort engineers and technicians spend on projects and analyses performance and cost by phase.", mods: ["Effort tracking", "Performance by phase", "Cost analysis"] }
+      - id: satinalma
+        tr: { name: "Satın Alma ve Stok", tag: "Talepten depoya", text: "Talebin siparişe, siparişin depoya, deponun muhasebeye bağlandığı zincir. Bugün Codigno ERP'nin en geniş modülü de buradan doğdu." }
+        en: { name: "Purchasing and Stock", tag: "From request to warehouse", text: "The chain that ties a request to the order, the order to the warehouse and the warehouse to accounting. Codigno ERP's largest module grew out of this." }
+        works:
+          - tr: { name: "Satın alma ürünü", text: "Kavramsal tasarımından veritabanına kadar üzerinde çalıştığım ürün; üç yıl boyunca enerji, perakende, inşaat, madencilik ve sigortacılıktan beş büyük kurumda kullanıldı.", mods: ["Temel satın alma süreçleri", "Kavramsal tasarım", "Veritabanı tasarımı", "Beş sektörde kurulum"] }
+            en: { name: "Purchasing product", text: "A product I worked on from concept design to database; over three years it was used by five large organisations in energy, retail, construction, mining and insurance.", mods: ["Core purchasing processes", "Concept design", "Database design", "Deployed in five sectors"] }
+          - tr: { name: "Grup içi satın alma yazılımı", text: "Büyük bir müteahhitlik grubu için, talepten stoğa kadar o gruba özgü süreçlerin yönetimi.", mods: ["Talep", "Satın alma", "Stoğa giriş", "Gruba özel süreçler"] }
+            en: { name: "Group purchasing software", text: "For a major contracting group, managing that group's own processes from request to stock.", mods: ["Requests", "Purchasing", "Stock entry", "Group-specific processes"] }
+          - tr: { name: "Ambar takip programı", text: "Mevcut basit stok programı geliştirilip yönetim muhasebesiyle birleştirildi.", mods: ["Stok takibi", "Ambar", "Yönetim muhasebesi entegrasyonu"] }
+            en: { name: "Warehouse tracking software", text: "An existing simple stock program was extended and merged with management accounting.", mods: ["Stock tracking", "Warehouse", "Management accounting integration"] }
+      - id: finans
+        tr: { name: "Finans", tag: "Paranın takibi", text: "Büyük bir grubun kasasından teminat mektubuna kadar temel finans araçlarının masada da sahada da takibi." }
+        en: { name: "Finance", tag: "Following the money", text: "Tracking a large group's core finance instruments, from cash to letters of guarantee, at the desk and in the field." }
+        works:
+          - tr: { name: "Finans yazılımı ve mobil uygulaması", text: "Kasa, çek-senet ve cari hesap takibi, fatura ve ödemeler, teminat mektupları; hepsinin raporlanması. Aynı sistemin Android uygulaması finans tablosunu cebe taşıdı.", mods: ["Kasa", "Çek ve senet", "Cari hesap", "Fatura ve ödeme", "Teminat mektupları", "Raporlama", "Android uygulama"] }
+            en: { name: "Finance software and mobile app", text: "Cash, cheque and account tracking, invoices and payments, letters of guarantee, and reporting on all of them. An Android app of the same system put the finance picture in your pocket.", mods: ["Cash", "Cheques and notes", "Accounts", "Invoices and payments", "Letters of guarantee", "Reporting", "Android app"] }
+      - id: bakim
+        tr: { name: "Bakım, Varlık ve Sigorta", tag: "Elde olanın takibi", text: "Makinelerin, binaların ve demirbaşların bakımının ve sigortasının izlendiği sistemler." }
+        en: { name: "Maintenance, Assets and Insurance", tag: "Looking after what you own", text: "Systems that track the maintenance and insurance of machines, buildings and fixtures." }
+        works:
+          - tr: { name: "Makine takip yazılımı", text: "Büyük bir müteahhitlik grubunun makineleri için. En önemli tarafı, kestirimci bakımın zamanını tahmin eden matematiksel yöntemler.", mods: ["Bakım ve onarım", "Periyodik işlemler", "Stok ve ambar bağlantısı", "Kestirimci bakım tahmini"] }
+            en: { name: "Machine tracking software", text: "For a major contracting group's machines. Its key feature is the mathematical methods that predict when predictive maintenance is due.", mods: ["Maintenance and repair", "Periodic tasks", "Stock and warehouse link", "Predictive maintenance forecast"] }
+          - tr: { name: "Sigorta takip yazılımı", text: "Aynı grubun makinelerinin, binalarının, çalışanlarının, projelerinin ve demirbaşlarının sigorta süreçleri tek yerde.", mods: ["Makine", "Bina", "Kişi", "Proje", "Demirbaş"] }
+            en: { name: "Insurance tracking software", text: "Insurance processes for the same group's machines, buildings, staff, projects and fixtures in one place.", mods: ["Machines", "Buildings", "People", "Projects", "Fixtures"] }
+
+  - id: codigno
+    angle: -90
+    tr: { name: "Codigno'da Bugün", tag: "Kurucu ortağı olduğum şirket", text: "Codigno Yazılım'da sahadaki cihazdan yönetimin baktığı rapora kadar zincirin tamamını aynı çatı altında kuruyoruz. Geçmiş projelerde tek tek yazdığımız sistemler burada birbiriyle konuşan ürünlere dönüştü." }
+    en: { name: "Codigno Today", tag: "The company I co-founded", text: "At Codigno Yazılım we build the whole chain under one roof, from the device in the field to the report management reads. Systems we once wrote one by one for clients became products here that talk to each other." }
+    nodes:
+      - id: erp
+        tr: { name: "Codigno ERP", tag: "Kurumsal platform", text: "Mühendislik yaklaşımıyla, resmî muhasebeden bağımsız tasarlanan; hem geliştirip hem sattığımız platform. Modüller aynı çekirdek üzerinde durduğu için birbiriyle konuşuyor. Proje yöneticisiyim." }
+        en: { name: "Codigno ERP", tag: "Enterprise platform", text: "A platform designed with an engineering approach, independent of statutory accounting, which we both build and sell. The modules sit on one core, so they talk to each other. I am its project manager." }
+        works:
+          - codigno: true
+            url: "https://codigno.com/urun/satin-alma-lojistik-yazilimi/"
+            tr: { name: "Satın Alma ve Lojistik", text: "Talepten faturaya kadar giden zincir ve üstüne stok, zimmet, bütçe gibi bağımsız modüller.", mods: ["Talep", "Teklif", "Sipariş", "Teslim alım", "Depo yönetimi", "Faturalama", "Malzeme yönetimi", "Tedarikçi yönetimi", "Stok sayımı", "Depo yerleri ve barkod", "Teklif kıyaslama", "Sabit kıymet ve zimmet", "Proje bütçesi", "Doğrudan temin", "Depo talebi", "Piyasa araştırması"] }
+            en: { name: "Purchasing and Logistics", text: "The chain from request to invoice, plus independent modules such as stock, asset assignment and budget.", mods: ["Requests", "Quotes", "Orders", "Goods receipt", "Warehouse management", "Invoicing", "Materials", "Suppliers", "Stock count", "Bin locations and barcodes", "Quote comparison", "Fixed assets and assignment", "Project budget", "Direct procurement", "Warehouse requests", "Market research"] }
+          - codigno: true
+            url: "https://codigno.com/urun/taseron-hakedis-yazilimi/"
+            tr: { name: "Taşeron ve Hakediş", text: "Şantiyede en çok para kaybettiren yer. Metraj, kesinti, teminat ve evrak tek zincirde.", mods: ["Hakediş hesaplama", "İş izni", "Poz kütüphanesi ve keşif", "İmalat ve metraj", "Taşeron sözleşmeleri", "Taşeron yönetimi", "Taşeron evrakı", "Şantiye günlük raporu", "Taşeron günlük raporu", "Tutanaklar"] }
+            en: { name: "Subcontractors and Progress Payments", text: "Where sites lose the most money. Quantities, deductions, guarantees and documents in one chain.", mods: ["Progress payment calculation", "Work permits", "Item library and estimates", "Works and quantities", "Subcontracts", "Subcontractor management", "Subcontractor documents", "Daily site report", "Daily subcontractor report", "Minutes"] }
+          - codigno: true
+            url: "https://codigno.com/urun/personel-yonetim-yazilimi/"
+            tr: { name: "Personel Yönetimi", text: "Puantajdan bordro dağıtımına, özlük evrakından vardiya planına kadar İK'nın günlük işi.", mods: ["Puantaj", "PDKS ve mobil puantaj", "Vardiya planlama", "İzin yönetimi", "Fazla mesai", "Avans", "Maaş tahakkuku", "Bordro dağıtımı", "Özlük ve evrak", "Çalışma portalı", "Personel kartı"] }
+            en: { name: "Personnel Management", text: "HR's daily work, from timesheets to payslip distribution, from personnel files to shift plans.", mods: ["Timesheets", "Time attendance and mobile timesheets", "Shift planning", "Leave", "Overtime", "Advances", "Payroll accrual", "Payslip distribution", "Personnel files", "Employee portal", "Employee card"] }
+          - codigno: true
+            url: "https://codigno.com/urun/crm-satis-yazilimi/"
+            tr: { name: "Satış, Finans ve Yapay Zekâ", text: "Görüşme kaydından teklife, ön muhasebeden e-ihracata. Satış ve para tarafı aynı veritabanında.", mods: ["Müşteri yönetimi", "Fırsat ve satış hunisi", "Satış teklifi", "Finans ve ön muhasebe", "E-ticaret ve e-ihracat", "Low-code uygulama geliştirme", "Yapay zekâ asistanı"] }
+            en: { name: "Sales, Finance and AI", text: "From call logs to quotes, from bookkeeping to e-export. Sales and money in one database.", mods: ["Customer management", "Opportunities and sales funnel", "Sales quotes", "Finance and bookkeeping", "E-commerce and e-export", "Low-code app development", "AI assistant"] }
+      - id: rtls
+        tr: { name: "RTLS Konum Takibi", tag: "Kim nerede", text: "Personelin, varlığın ve ekipmanın kapalı alanda nerede olduğunu gösteren sistem. Etiketi, anchor'ı ve sunucu yazılımı bizim tasarımımız; yer altında da depoda da çalışıyor." }
+        en: { name: "RTLS Location Tracking", tag: "Who is where", text: "A system that shows where people, assets and equipment are indoors. The tag, the anchors and the server software are our own design; it works underground and in warehouses alike." }
+        works:
+          - codigno: true
+            url: "https://codigno.com/rtls/"
+            tr: { name: "Gerçek zamanlı konum takip sistemi", text: "Maden, üretim, depo ve şantiyede kullanılıyor.", mods: ["UWB konum takibi", "Personel konum takibi", "Varlık ve ekipman takibi", "Maden ocağı personel takibi", "Depo ve lojistik konum takibi", "Codigno Tag Pro"] }
+            en: { name: "Real-time location system", text: "Used in mines, factories, warehouses and construction sites.", mods: ["UWB location tracking", "Personnel tracking", "Asset and equipment tracking", "Underground mine personnel tracking", "Warehouse and logistics tracking", "Codigno Tag Pro"] }
+      - id: emobil
+        tr: { name: "E-mobilite", tag: "Şarj istasyonları", text: "Elektrikli araç şarj istasyonlarının yönetimi; yazılımdan istasyonu besleyen güç tarafına kadar." }
+        en: { name: "E-mobility", tag: "EV charging", text: "Managing electric vehicle charging stations, from software to the power side that feeds the station." }
+        works:
+          - codigno: true
+            tr: { name: "Şarj istasyonu yönetim yazılımı", text: "Kurucu ortağı olduğum Kolay Şarj ve Codigno çatısı altında, e-mobilite alanında kullanılan şarj istasyonu yönetim yazılımı (EMSP). Proje yöneticisi olarak." }
+            en: { name: "Charging station management software", text: "Charging station management software (EMSP) for e-mobility, built under Kolay Şarj, which I co-founded, and Codigno. As project manager." }
+      - id: saha
+        tr: { name: "Saha ve Geçiş", tag: "Kapıda ve sahada", text: "Kapıdan kim geçti, hangi araç girdi, saha ekibi nerede: fiziksel kontrolün yazılım tarafı." }
+        en: { name: "Field and Access", tag: "At the gate and in the field", text: "Who came through the gate, which vehicle entered, where the field team is: the software side of physical control." }
+        works:
+          - codigno: true
+            url: "https://codigno.com/urun/saha-takip-yazilimlari/"
+            tr: { name: "Saha takip", text: "Saha ekibinin görev ve konum takibi." }
+            en: { name: "Field tracking", text: "Task and location tracking for field teams." }
+          - codigno: true
+            url: "https://codigno.com/urun/iot-kapi-kontrol-uygulamalari/"
+            tr: { name: "Kapı kontrol", text: "Kapı ve turnike geçişlerinin yönetimi." }
+            en: { name: "Door control", text: "Managing door and turnstile access." }
+          - codigno: true
+            url: "https://codigno.com/urun/plaka-tanima-sistemi/"
+            tr: { name: "Plaka tanıma", text: "Araç girişlerinin plakadan tanınması." }
+            en: { name: "Licence plate recognition", text: "Recognising vehicles at the gate by their plates." }
+
+  - id: sektor
+    angle: 90
+    tr: { name: "Sektörler", tag: "Nerede çalıştım", text: "Aynı alanlar her sektörde farklı bir araya geliyor." }
+    en: { name: "Sectors", tag: "Where I have worked", text: "The same fields come together differently in each sector." }
+    nodes:
+      - id: s-insaat
+        links: [teklif, santiye, satinalma, erp, rtls]
+        tr: { name: "İnşaat", tag: "Teklif ve hakediş", text: "Mühendislik eğitimimin olduğu yer. Türkiye'nin en büyük inşaat gruplarından birinin ihale ve şantiye sistemleri, büyük bir müteahhitlik grubunun yedi ayrı yazılımı ve bugün Codigno'nun taşeron ve hakediş ürünü." }
+        en: { name: "Construction", tag: "Bids and payments", text: "Where my engineering training lies. Tender and site systems for one of Turkey's largest construction groups, seven separate systems for a major contracting group and, today, Codigno's subcontractor and progress payment product." }
+      - id: s-maden
+        links: [scada, iot, satinalma, rtls]
+        tr: { name: "Maden ve Kimya", tag: "Büyük tesisler", text: "Kamuya ait tesislerde 1.500, 2.500 ve 25.000 I/O'luk üç kontrol sistemi, tesisin uzaktan izlenmesi ve yer altında konum takibi." }
+        en: { name: "Mining and Chemicals", tag: "Large plants", text: "Three control systems of 1,500, 2,500 and 25,000 I/O at state-owned plants, remote plant monitoring and underground location tracking." }
+      - id: s-enerji
+        links: [scada, veri, emobil, iot, satinalma]
+        tr: { name: "Enerji ve E-mobilite", tag: "Şebeke ve şarj", text: "Türbin ve trafolardan yük atmaya, ülke ölçeğinde tüketim tahmininden şarj istasyonu yönetimine." }
+        en: { name: "Energy and E-mobility", tag: "Grid and charging", text: "From turbines, transformers and load shedding to nationwide consumption forecasts and charging station management." }
+      - id: s-kamu
+        links: [web, scada]
+        tr: { name: "Kamu", tag: "Portal ve altyapı", text: "Bir bakanlığın 800 sitesini tek yerden yöneten portal ve ulusal bir araştırma kurumunun veri merkezi kumandası." }
+        en: { name: "Public Sector", tag: "Portals and infrastructure", text: "A portal that runs a ministry's 800 sites from one place and the control system of a national research institution's data center." }
+      - id: s-grup
+        links: [finans, bakim, satinalma, santiye]
+        tr: { name: "Çok Şirketli Gruplar", tag: "Ortak süreçler", text: "Büyük bir müteahhitlik grubu için yedi ayrı sistem: proje takibi, satın alma, ambar, finans ve mobil uygulaması, makine bakımı ve sigorta." }
+        en: { name: "Business Groups", tag: "Shared processes", text: "Seven separate systems for a major contracting group: project tracking, purchasing, warehouse, finance and its mobile app, machine maintenance and insurance." }
+      - id: s-pazarlama
+        links: [veri, satinalma]
+        tr: { name: "Perakende ve Pazarlama", tag: "Veri ve tedarik", text: "Dünyanın en büyük teknoloji şirketlerinden birinin pazarlama birimine üç yıllık veri çalışması ve perakendede satın alma." }
+        en: { name: "Retail and Marketing", tag: "Data and supply", text: "A three-year data engagement for the marketing unit of one of the world's largest technology companies, and purchasing in retail." }
