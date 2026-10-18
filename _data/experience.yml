@@ -30,7 +30,7 @@ center:
       - "Full stack geliştirici"
       - "Yazılım ekip lideri ve ürün yöneticisi"
       - "Kurucu ortak ve proje yöneticisi"
-    tools: "PHP, Go, C#, Python, Java, Fortran, Matlab · ABB 800xA DCS, Siemens PLC, Kepware OPC · MySQL, MSSQL, PostgreSQL, NoSQL · AutoCAD, SAP2000, LARSA, Primavera, MS Project"
+    tools: "PHP, Node.js, Go, C#, Python, Java, Fortran, Matlab · ABB 800xA DCS, Siemens PLC, Kepware OPC · MySQL, MSSQL, PostgreSQL, NoSQL · AutoCAD, SAP2000, LARSA, Primavera, MS Project"
   en:
     name: "Mustafa Sönmez"
     tag: "nearly 20 years"
@@ -42,7 +42,7 @@ center:
       - "Full stack developer"
       - "Software team lead and product manager"
       - "Co-founder and project manager"
-    tools: "PHP, Go, C#, Python, Java, Fortran, Matlab · ABB 800xA DCS, Siemens PLC, Kepware OPC · MySQL, MSSQL, PostgreSQL, NoSQL · AutoCAD, SAP2000, LARSA, Primavera, MS Project"
+    tools: "PHP, Node.js, Go, C#, Python, Java, Fortran, Matlab · ABB 800xA DCS, Siemens PLC, Kepware OPC · MySQL, MSSQL, PostgreSQL, NoSQL · AutoCAD, SAP2000, LARSA, Primavera, MS Project"
 
 stats:
   - tr: { value: "20 yıla yakın", label: "mühendislik ve yazılım" }
