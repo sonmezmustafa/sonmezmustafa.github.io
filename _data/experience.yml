@@ -6,7 +6,7 @@ ui:
     contains: "Bu koldakiler"
     codigno: "Codigno"
     roles_title: "Yol"
-    tools_title: "Araçlar"
+    tools_title: "Diller ve araçlar"
     open: "Ayrıntı"
   en:
     intro: "A map of the work I have done over nearly twenty years. From state-owned chemical plants to major construction groups, from a ministry's hundreds of websites to EV chargers. Pick a node; the lines show which fields and sectors that work touches, and the work and its modules are listed right below."
@@ -15,7 +15,7 @@ ui:
     contains: "In this branch"
     codigno: "Codigno"
     roles_title: "Path"
-    tools_title: "Tools"
+    tools_title: "Languages and tools"
     open: "Details"
 
 center:
@@ -30,7 +30,7 @@ center:
       - "Full stack geliştirici"
       - "Yazılım ekip lideri ve ürün yöneticisi"
       - "Kurucu ortak ve proje yöneticisi"
-    tools: "PHP, Node.js, Go, C#, Python, Java, Fortran, Matlab · ABB 800xA DCS, Siemens PLC, Kepware OPC · MySQL, MSSQL, PostgreSQL, NoSQL · AutoCAD, SAP2000, LARSA, Primavera, MS Project"
+    tools: "PHP, Node.js, Go, C#, Python, Java, Fortran, Matlab, ABB 800xA DCS, Siemens PLC, Kepware OPC, MySQL, MSSQL, PostgreSQL, NoSQL, AutoCAD, SAP2000, LARSA, Primavera, MS Project"
   en:
     name: "Mustafa Sönmez"
     tag: "nearly 20 years"
@@ -42,7 +42,7 @@ center:
       - "Full stack developer"
       - "Software team lead and product manager"
       - "Co-founder and project manager"
-    tools: "PHP, Node.js, Go, C#, Python, Java, Fortran, Matlab · ABB 800xA DCS, Siemens PLC, Kepware OPC · MySQL, MSSQL, PostgreSQL, NoSQL · AutoCAD, SAP2000, LARSA, Primavera, MS Project"
+    tools: "PHP, Node.js, Go, C#, Python, Java, Fortran, Matlab, ABB 800xA DCS, Siemens PLC, Kepware OPC, MySQL, MSSQL, PostgreSQL, NoSQL, AutoCAD, SAP2000, LARSA, Primavera, MS Project"
 
 stats:
   - tr: { value: "20 yıla yakın", label: "mühendislik ve yazılım" }
