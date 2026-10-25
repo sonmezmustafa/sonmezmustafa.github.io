@@ -1,6 +1,7 @@
 ---
 title: 'Reckoning the Road'
 ref: yol-hesabi
+translated_by: Claude Opus 5.5
 section: engineering
 permalink: /en/engineering/reckoning-the-road/
 description: 'An essay on the old bond between civil engineering and software, from Turkey’s first computer at the Highways Directorate to METU Civil Engineering.'

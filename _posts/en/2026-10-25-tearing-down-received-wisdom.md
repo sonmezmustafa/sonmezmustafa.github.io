@@ -1,6 +1,7 @@
 ---
 title: 'Tearing Down Received Wisdom'
 ref: ezberleri-yikmak
+translated_by: Claude Opus 5.5
 description: 'An essay on the saying “Keep your emotions out of your work” and on calling emotionless work professional.'
 ---
 

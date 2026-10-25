@@ -1,6 +1,7 @@
 ---
 title: Starting to Program (Trying to Understand)
 ref: programlamaya-baslamak
+translated_by: Claude Opus 5.5
 description: 'On understanding the problem before writing code: listening, acting the process out together, and only then designing the solution.'
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: 'Ask “Why?” First'
 ref: once-niye
+translated_by: Claude Opus 5.5
 section: engineering
 permalink: /en/engineering/ask-why-first/
 description: 'An essay on starting engineering work with “Why?” before “How?”.'

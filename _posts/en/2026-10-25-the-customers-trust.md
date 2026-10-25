@@ -1,6 +1,7 @@
 ---
 title: 'The Customer’s Trust'
 ref: musteride-guven
+translated_by: Claude Opus 5.5
 description: 'An essay on how a customer’s trust is built, why promises go unkept, and how that trust is kept.'
 ---
 

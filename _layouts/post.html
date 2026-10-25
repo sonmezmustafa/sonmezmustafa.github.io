@@ -4,7 +4,7 @@ layout: default
 {%- assign t = site.data.i18n[page.lang] -%}
 <article>
   <h1>{{ page.title }}</h1>
-  <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: t.date_format }}</time></p>
+  <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: t.date_format }}</time>{% if page.translated_by %} · {{ t.translated_by }}, {{ page.translated_by }}{% endif %}</p>
   {{ content }}
 </article>
 {%- if page.section == "engineering" %}
