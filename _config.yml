@@ -42,6 +42,7 @@ contact_links:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 exclude:
   - README.md

@@ -1,13 +1,9 @@
 tr:
   home_url: /
   posts_url: /yazilar/
-  engineering_url: /muhendislik/
-  engineering_all: Tüm mühendislik yazıları
   nav:
     - title: Projeler
       url: /projeler/
-    - title: Mühendislik
-      url: /muhendislik/
     - title: Yazılar
       url: /yazilar/
   job_title: Kurucu Ortak
@@ -17,17 +13,12 @@ tr:
   posts_title: Son yazılar
   all_posts: Tüm yazılar
   no_posts: Henüz yazı yok.
-  date_format: "%d.%m.%Y"
 en:
   home_url: /en/
   posts_url: /en/posts/
-  engineering_url: /en/engineering/
-  engineering_all: All engineering essays
   nav:
     - title: Projects
       url: /en/projects/
-    - title: Engineering
-      url: /en/engineering/
     - title: Posts
       url: /en/posts/
   job_title: Co-founder
@@ -37,5 +28,4 @@ en:
   posts_title: Latest posts
   all_posts: All posts
   no_posts: No posts yet.
-  date_format: "%b %-d, %Y"
   translated_by: "AI-generated translation of the Turkish original"

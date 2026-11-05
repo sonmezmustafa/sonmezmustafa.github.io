@@ -1,8 +1,7 @@
 ---
 title: 'Mühendislikte Basit Düşünmek'
 ref: basit-dusunmek
-section: engineering
-permalink: /muhendislik/muhendislikte-basit-dusunmek/
+redirect_from: /muhendislik/muhendislikte-basit-dusunmek/
 description: 'Mühendislikte olaylara basit bakmak ve her işin fiziksel karşılığını unutmamak üzerine bir deneme; yük yolundan kuvars kristaline.'
 ---
 

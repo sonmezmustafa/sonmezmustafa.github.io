@@ -1,8 +1,7 @@
 ---
 title: 'Yol Hesabı'
 ref: yol-hesabi
-section: engineering
-permalink: /muhendislik/yol-hesabi/
+redirect_from: /muhendislik/yol-hesabi/
 description: 'İnşaat mühendisliği ile yazılım arasındaki eski bağ üzerine bir deneme; Karayolları’na gelen ilk bilgisayardan ODTÜ İnşaat’a.'
 ---
 

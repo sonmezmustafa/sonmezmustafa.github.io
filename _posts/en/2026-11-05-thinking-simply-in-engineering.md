@@ -2,8 +2,7 @@
 title: 'Thinking Simply in Engineering'
 ref: basit-dusunmek
 translated_by: Claude Opus 5.5
-section: engineering
-permalink: /en/engineering/thinking-simply-in-engineering/
+redirect_from: /en/engineering/thinking-simply-in-engineering/
 description: 'An essay on looking at things simply in engineering and never forgetting the physical side of the work, from load paths to quartz crystals.'
 ---
 

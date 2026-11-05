@@ -1,8 +1,7 @@
 ---
 title: 'Önce “Niye?” Diye Sormak'
 ref: once-niye
-section: engineering
-permalink: /muhendislik/once-niye-diye-sormak/
+redirect_from: /muhendislik/once-niye-diye-sormak/
 description: 'Mühendisliğe “Nasıl?” sorusundan önce “Niye?” sorusuyla başlamak üzerine bir deneme.'
 ---
 

@@ -24,6 +24,6 @@ olursa dil bağlantısı çeviriye gider, yoksa öbür dilin ana sayfasına gide
 ## Sayfalar
 
 - `index.html` — Türkçe ana sayfa, `en/index.html` — İngilizce ana sayfa
-- `projeler/`, `muhendislik/`, `yazilar/` — menü sayfaları; İngilizceleri `en/projects/`, `en/engineering/`, `en/posts/`
+- `projeler/`, `yazilar/` — menü sayfaları; İngilizceleri `en/projects/`, `en/posts/`
 - `_data/i18n.yml` — menü ve arayüz metinleri
 - `assets/css/style.css` — görünüm
